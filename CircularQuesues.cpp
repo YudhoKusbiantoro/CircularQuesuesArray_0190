@@ -22,7 +22,7 @@ public:
 		//cek apakah antrian penuh
 		if ((FRONT == 0 && REAR == max - 1) || (FRONT == REAR + 1)) {
 			cout << "\nQueue overflow\n";
-			return ;
+			return;
 		}
 
 		// cek apakah antrian kosong
@@ -31,7 +31,9 @@ public:
 			REAR = 0;
 		}
 		else {
-			//jika REAR berapa di posisi terakhir array, kembali ke awla array
+			//jika REAR berapa di posisi terakhir array, kembali ke awal array
 			if (REAR == max - 1)
 				REAR = 0;
+			else
+				REAR = REAR + 1;
 		}
