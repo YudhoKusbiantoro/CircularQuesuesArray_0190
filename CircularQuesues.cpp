@@ -61,3 +61,8 @@ public:
 				FRONT = FRONT + 1;
 		}
 	}
+
+	void display() {
+
+		int FRONT_Posisition = FRONT;
+		int REAR_Posisition = REAR;
