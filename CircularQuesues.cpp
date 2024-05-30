@@ -66,3 +66,11 @@ public:
 
 		int FRONT_Posisition = FRONT;
 		int REAR_Posisition = REAR;
+
+		// cek apakah antrian kosong 
+		if (FRONT_Posisition == -1) {
+			cout << "Queue is empty\n";
+			return;
+		}
+
+		cout << "\nElements in the queue are...\n";
