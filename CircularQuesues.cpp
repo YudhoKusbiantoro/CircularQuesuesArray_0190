@@ -91,3 +91,13 @@ public:
 			}
 
 			FRONT_Posisition = 0;
+
+			// iterasi dari awal array hingga REAR
+			while (FRONT_Posisition <= REAR_Posisition) {
+				cout << queue_array[FRONT_Posisition] << "   ";
+				FRONT_Posisition++;
+			}
+			cout << endl;
+		}
+	}
+};
